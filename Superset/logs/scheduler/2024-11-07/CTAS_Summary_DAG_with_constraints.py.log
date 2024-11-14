@@ -1,0 +1,42 @@
+[2024-11-07T18:48:05.220+0000] {processor.py:161} INFO - Started process (PID=227) to work on /opt/airflow/dags/CTAS_Summary_DAG_with_constraints.py
+[2024-11-07T18:48:05.223+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/CTAS_Summary_DAG_with_constraints.py for tasks to queue
+[2024-11-07T18:48:05.226+0000] {logging_mixin.py:188} INFO - [2024-11-07T18:48:05.226+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/CTAS_Summary_DAG_with_constraints.py
+[2024-11-07T18:48:05.263+0000] {processor.py:840} INFO - DAG(s) 'SessionSummaryWithConstraintsCheck' retrieved from /opt/airflow/dags/CTAS_Summary_DAG_with_constraints.py
+[2024-11-07T18:48:05.342+0000] {logging_mixin.py:188} INFO - [2024-11-07T18:48:05.341+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-11-07T18:48:05.391+0000] {logging_mixin.py:188} INFO - [2024-11-07T18:48:05.391+0000] {dag.py:3954} INFO - Setting next_dagrun for SessionSummaryWithConstraintsCheck to 2024-11-07 06:00:00+00:00, run_after=2024-11-08 06:00:00+00:00
+[2024-11-07T18:48:05.445+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/CTAS_Summary_DAG_with_constraints.py took 0.235 seconds
+[2024-11-07T18:48:35.997+0000] {processor.py:161} INFO - Started process (PID=276) to work on /opt/airflow/dags/CTAS_Summary_DAG_with_constraints.py
+[2024-11-07T18:48:36.010+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/CTAS_Summary_DAG_with_constraints.py for tasks to queue
+[2024-11-07T18:48:36.016+0000] {logging_mixin.py:188} INFO - [2024-11-07T18:48:36.015+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/CTAS_Summary_DAG_with_constraints.py
+[2024-11-07T18:48:36.058+0000] {processor.py:840} INFO - DAG(s) 'SessionSummaryWithConstraintsCheck' retrieved from /opt/airflow/dags/CTAS_Summary_DAG_with_constraints.py
+[2024-11-07T18:48:36.131+0000] {logging_mixin.py:188} INFO - [2024-11-07T18:48:36.131+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-11-07T18:48:36.228+0000] {logging_mixin.py:188} INFO - [2024-11-07T18:48:36.227+0000] {dag.py:3954} INFO - Setting next_dagrun for SessionSummaryWithConstraintsCheck to 2024-11-07 06:00:00+00:00, run_after=2024-11-08 06:00:00+00:00
+[2024-11-07T18:48:36.296+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/CTAS_Summary_DAG_with_constraints.py took 0.308 seconds
+[2024-11-07T18:49:06.939+0000] {processor.py:161} INFO - Started process (PID=297) to work on /opt/airflow/dags/CTAS_Summary_DAG_with_constraints.py
+[2024-11-07T18:49:06.941+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/CTAS_Summary_DAG_with_constraints.py for tasks to queue
+[2024-11-07T18:49:06.946+0000] {logging_mixin.py:188} INFO - [2024-11-07T18:49:06.944+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/CTAS_Summary_DAG_with_constraints.py
+[2024-11-07T18:49:07.003+0000] {processor.py:840} INFO - DAG(s) 'SessionSummaryWithConstraintsCheck' retrieved from /opt/airflow/dags/CTAS_Summary_DAG_with_constraints.py
+[2024-11-07T18:49:07.061+0000] {logging_mixin.py:188} INFO - [2024-11-07T18:49:07.060+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-11-07T18:49:07.118+0000] {logging_mixin.py:188} INFO - [2024-11-07T18:49:07.118+0000] {dag.py:3954} INFO - Setting next_dagrun for SessionSummaryWithConstraintsCheck to 2024-11-07 06:00:00+00:00, run_after=2024-11-08 06:00:00+00:00
+[2024-11-07T18:49:07.192+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/CTAS_Summary_DAG_with_constraints.py took 0.261 seconds
+[2024-11-07T18:49:37.649+0000] {processor.py:161} INFO - Started process (PID=318) to work on /opt/airflow/dags/CTAS_Summary_DAG_with_constraints.py
+[2024-11-07T18:49:37.650+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/CTAS_Summary_DAG_with_constraints.py for tasks to queue
+[2024-11-07T18:49:37.653+0000] {logging_mixin.py:188} INFO - [2024-11-07T18:49:37.652+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/CTAS_Summary_DAG_with_constraints.py
+[2024-11-07T18:49:37.673+0000] {processor.py:840} INFO - DAG(s) 'SessionSummaryWithConstraintsCheck' retrieved from /opt/airflow/dags/CTAS_Summary_DAG_with_constraints.py
+[2024-11-07T18:49:37.704+0000] {logging_mixin.py:188} INFO - [2024-11-07T18:49:37.703+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-11-07T18:49:37.727+0000] {logging_mixin.py:188} INFO - [2024-11-07T18:49:37.727+0000] {dag.py:3954} INFO - Setting next_dagrun for SessionSummaryWithConstraintsCheck to 2024-11-07 06:00:00+00:00, run_after=2024-11-08 06:00:00+00:00
+[2024-11-07T18:49:37.753+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/CTAS_Summary_DAG_with_constraints.py took 0.109 seconds
+[2024-11-07T18:50:17.570+0000] {processor.py:161} INFO - Started process (PID=198) to work on /opt/airflow/dags/CTAS_Summary_DAG_with_constraints.py
+[2024-11-07T18:50:17.571+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/CTAS_Summary_DAG_with_constraints.py for tasks to queue
+[2024-11-07T18:50:17.573+0000] {logging_mixin.py:188} INFO - [2024-11-07T18:50:17.573+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/CTAS_Summary_DAG_with_constraints.py
+[2024-11-07T18:50:17.596+0000] {processor.py:840} INFO - DAG(s) 'SessionSummaryWithConstraintsCheck' retrieved from /opt/airflow/dags/CTAS_Summary_DAG_with_constraints.py
+[2024-11-07T18:50:17.632+0000] {logging_mixin.py:188} INFO - [2024-11-07T18:50:17.631+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-11-07T18:50:17.654+0000] {logging_mixin.py:188} INFO - [2024-11-07T18:50:17.654+0000] {dag.py:3954} INFO - Setting next_dagrun for SessionSummaryWithConstraintsCheck to 2024-11-07 06:00:00+00:00, run_after=2024-11-08 06:00:00+00:00
+[2024-11-07T18:50:17.680+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/CTAS_Summary_DAG_with_constraints.py took 0.115 seconds
+[2024-11-07T18:50:48.076+0000] {processor.py:161} INFO - Started process (PID=250) to work on /opt/airflow/dags/CTAS_Summary_DAG_with_constraints.py
+[2024-11-07T18:50:48.077+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/CTAS_Summary_DAG_with_constraints.py for tasks to queue
+[2024-11-07T18:50:48.079+0000] {logging_mixin.py:188} INFO - [2024-11-07T18:50:48.079+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/CTAS_Summary_DAG_with_constraints.py
+[2024-11-07T18:50:48.098+0000] {processor.py:840} INFO - DAG(s) 'SessionSummaryWithConstraintsCheck' retrieved from /opt/airflow/dags/CTAS_Summary_DAG_with_constraints.py
+[2024-11-07T18:50:48.122+0000] {logging_mixin.py:188} INFO - [2024-11-07T18:50:48.122+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-11-07T18:50:48.147+0000] {logging_mixin.py:188} INFO - [2024-11-07T18:50:48.147+0000] {dag.py:3954} INFO - Setting next_dagrun for SessionSummaryWithConstraintsCheck to 2024-11-07 06:00:00+00:00, run_after=2024-11-08 06:00:00+00:00
+[2024-11-07T18:50:48.174+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/CTAS_Summary_DAG_with_constraints.py took 0.104 seconds

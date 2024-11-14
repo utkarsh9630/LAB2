@@ -1,0 +1,41 @@
+[2024-11-12T20:49:06.628+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-11-12T20:49:06.680+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: dbt_commands_dag.dbt_run scheduled__2024-11-11T11:30:00+00:00 [queued]>
+[2024-11-12T20:49:06.696+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: dbt_commands_dag.dbt_run scheduled__2024-11-11T11:30:00+00:00 [queued]>
+[2024-11-12T20:49:06.699+0000] {taskinstance.py:2306} INFO - Starting attempt 2 of 3
+[2024-11-12T20:49:06.722+0000] {taskinstance.py:2330} INFO - Executing <Task(BashOperator): dbt_run> on 2024-11-11 11:30:00+00:00
+[2024-11-12T20:49:06.731+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'dbt_commands_dag', 'dbt_run', 'scheduled__2024-11-11T11:30:00+00:00', '--job-id', '198', '--raw', '--subdir', 'DAGS_FOLDER/DBT_DAG_RUN.py', '--cfg-path', '/tmp/tmpguoz5_50']
+[2024-11-12T20:49:06.734+0000] {standard_task_runner.py:91} INFO - Job 198: Subtask dbt_run
+[2024-11-12T20:49:06.736+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:61 DeprecationWarning: This process (pid=336) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2024-11-12T20:49:06.738+0000] {standard_task_runner.py:63} INFO - Started process 337 to run task
+[2024-11-12T20:49:06.823+0000] {task_command.py:426} INFO - Running <TaskInstance: dbt_commands_dag.dbt_run scheduled__2024-11-11T11:30:00+00:00 [running]> on host 16d7368eac06
+[2024-11-12T20:49:07.048+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='Utkarsh Tripathi' AIRFLOW_CTX_DAG_ID='dbt_commands_dag' AIRFLOW_CTX_TASK_ID='dbt_run' AIRFLOW_CTX_EXECUTION_DATE='2024-11-11T11:30:00+00:00' AIRFLOW_CTX_TRY_NUMBER='2' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-11-11T11:30:00+00:00'
+[2024-11-12T20:49:07.050+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2024-11-12T20:49:07.079+0000] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2024-11-12T20:49:07.082+0000] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', '/home/***/.local/bin/dbt run --profiles-dir /opt/***/dbt --project-dir /opt/***/dbt']
+[2024-11-12T20:49:07.093+0000] {subprocess.py:86} INFO - Output:
+[2024-11-12T20:49:10.419+0000] {subprocess.py:93} INFO - [0m20:49:10  Running with dbt=1.8.7
+[2024-11-12T20:49:11.874+0000] {subprocess.py:93} INFO - [0m20:49:11  Registered adapter: snowflake=1.8.4
+[2024-11-12T20:49:12.240+0000] {subprocess.py:93} INFO - [0m20:49:12  Unable to do partial parsing because profile has changed
+[2024-11-12T20:49:15.274+0000] {subprocess.py:93} INFO - [0m20:49:15  [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+[2024-11-12T20:49:15.275+0000] {subprocess.py:93} INFO - There are 1 unused configuration paths:
+[2024-11-12T20:49:15.276+0000] {subprocess.py:93} INFO - - models.build_utl.example
+[2024-11-12T20:49:15.624+0000] {subprocess.py:93} INFO - [0m20:49:15  Found 2 models, 1 snapshot, 2 data tests, 2 sources, 459 macros
+[2024-11-12T20:49:15.637+0000] {subprocess.py:93} INFO - [0m20:49:15
+[2024-11-12T20:49:20.863+0000] {subprocess.py:93} INFO - [0m20:49:20  Concurrency: 1 threads (target='LAB2_WORK')
+[2024-11-12T20:49:20.865+0000] {subprocess.py:93} INFO - [0m20:49:20
+[2024-11-12T20:49:20.878+0000] {subprocess.py:93} INFO - [0m20:49:20  1 of 2 START sql view model RAW_DATA_LAB2.input_stock_data ..................... [RUN]
+[2024-11-12T20:49:22.850+0000] {subprocess.py:93} INFO - [0m20:49:22  1 of 2 OK created sql view model RAW_DATA_LAB2.input_stock_data ................ [[32mSUCCESS 1[0m in 1.96s]
+[2024-11-12T20:49:22.863+0000] {subprocess.py:93} INFO - [0m20:49:22  2 of 2 START sql view model RAW_DATA_LAB2.moving_averages ...................... [RUN]
+[2024-11-12T20:49:24.433+0000] {subprocess.py:93} INFO - [0m20:49:24  2 of 2 OK created sql view model RAW_DATA_LAB2.moving_averages ................. [[32mSUCCESS 1[0m in 1.57s]
+[2024-11-12T20:49:24.445+0000] {subprocess.py:93} INFO - [0m20:49:24
+[2024-11-12T20:49:24.447+0000] {subprocess.py:93} INFO - [0m20:49:24  Finished running 2 view models in 0 hours 0 minutes and 8.81 seconds (8.81s).
+[2024-11-12T20:49:24.566+0000] {subprocess.py:93} INFO - [0m20:49:24
+[2024-11-12T20:49:24.572+0000] {subprocess.py:93} INFO - [0m20:49:24  [32mCompleted successfully[0m
+[2024-11-12T20:49:24.575+0000] {subprocess.py:93} INFO - [0m20:49:24
+[2024-11-12T20:49:24.578+0000] {subprocess.py:93} INFO - [0m20:49:24  Done. PASS=2 WARN=0 ERROR=0 SKIP=0 TOTAL=2
+[2024-11-12T20:49:26.399+0000] {subprocess.py:97} INFO - Command exited with return code 0
+[2024-11-12T20:49:26.401+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-11-12T20:49:26.434+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=dbt_commands_dag, task_id=dbt_run, run_id=scheduled__2024-11-11T11:30:00+00:00, execution_date=20241111T113000, start_date=20241112T204906, end_date=20241112T204926
+[2024-11-12T20:49:26.484+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2024-11-12T20:49:26.511+0000] {taskinstance.py:3498} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2024-11-12T20:49:26.516+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

@@ -1,0 +1,31 @@
+[2024-11-12T19:08:05.041+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-11-12T19:08:05.140+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: Stock_data_analysis_lab2utl.extract scheduled__2024-11-11T17:00:00+00:00 [queued]>
+[2024-11-12T19:08:05.166+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: Stock_data_analysis_lab2utl.extract scheduled__2024-11-11T17:00:00+00:00 [queued]>
+[2024-11-12T19:08:05.169+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 2
+[2024-11-12T19:08:05.214+0000] {taskinstance.py:2330} INFO - Executing <Task(_PythonDecoratedOperator): extract> on 2024-11-11 17:00:00+00:00
+[2024-11-12T19:08:05.230+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'Stock_data_analysis_lab2utl', 'extract', 'scheduled__2024-11-11T17:00:00+00:00', '--job-id', '177', '--raw', '--subdir', 'DAGS_FOLDER/utl.py', '--cfg-path', '/tmp/tmpuxf5ydon']
+[2024-11-12T19:08:05.240+0000] {standard_task_runner.py:91} INFO - Job 177: Subtask extract
+[2024-11-12T19:08:05.259+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:61 DeprecationWarning: This process (pid=269) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2024-11-12T19:08:05.261+0000] {standard_task_runner.py:63} INFO - Started process 277 to run task
+[2024-11-12T19:08:05.427+0000] {task_command.py:426} INFO - Running <TaskInstance: Stock_data_analysis_lab2utl.extract scheduled__2024-11-11T17:00:00+00:00 [running]> on host f3d2ff879b5a
+[2024-11-12T19:08:05.739+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='Utkarsh Tripathi' AIRFLOW_CTX_DAG_ID='Stock_data_analysis_lab2utl' AIRFLOW_CTX_TASK_ID='extract' AIRFLOW_CTX_EXECUTION_DATE='2024-11-11T17:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-11-11T17:00:00+00:00'
+[2024-11-12T19:08:05.743+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2024-11-12T19:08:10.041+0000] {python.py:237} INFO - Done. Returned value was:            date     open    high       low   close    volume symbol
+0    2024-07-08  227.090  227.85  223.2500  227.82  59085861   AAPL
+1    2024-07-09  227.930  229.40  226.3721  228.68  48169822   AAPL
+2    2024-07-10  229.300  233.08  229.2500  232.98  62627687   AAPL
+3    2024-07-11  231.390  232.39  225.7700  227.57  64710617   AAPL
+4    2024-07-12  228.920  232.64  228.6800  230.54  53046527   AAPL
+..          ...      ...     ...       ...     ...       ...    ...
+175  2024-11-05  408.370  414.90  408.0800  411.46  17626011   MSFT
+176  2024-11-06  412.420  420.45  410.5200  420.18  26681842   MSFT
+177  2024-11-07  421.280  426.85  419.8800  425.43  19901782   MSFT
+178  2024-11-08  425.320  426.50  421.7800  422.54  16891414   MSFT
+179  2024-11-11  422.515  424.81  416.0000  418.01  24503321   MSFT
+
+[180 rows x 7 columns]
+[2024-11-12T19:08:10.179+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-11-12T19:08:11.124+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=Stock_data_analysis_lab2utl, task_id=extract, run_id=scheduled__2024-11-11T17:00:00+00:00, execution_date=20241111T170000, start_date=20241112T190805, end_date=20241112T190811
+[2024-11-12T19:08:11.319+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2024-11-12T19:08:11.381+0000] {taskinstance.py:3498} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-11-12T19:08:11.397+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

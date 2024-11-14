@@ -1,0 +1,20 @@
+version: 2
+
+sources:
+  - name: raw_data
+    database: LAB2_WORK
+    schema: RAW_DATA_LAB2
+    description: "Schema which stores raw tables (ETL)"
+    tables:
+      - name: STOCK_PRICES_SYMBOLS
+        identifier: STOCK_PRICES_SYMBOLS
+        description: "Session data including userId, sessionId, and channel"
+
+  - name: analytics
+    database: LAB2_WORK
+    schema: RAW_DATA_LAB2
+    description: "Schema with stores analytics tables (ELT)"
+    tables:
+      - name: moving_averages
+        identifier: moving_averages
+        description: "Complete session info"

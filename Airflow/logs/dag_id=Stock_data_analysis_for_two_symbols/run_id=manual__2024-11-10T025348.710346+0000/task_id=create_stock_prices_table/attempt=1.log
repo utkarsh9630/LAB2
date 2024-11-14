@@ -1,0 +1,72 @@
+[2024-11-10T02:53:51.362+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-11-10T02:53:51.437+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: Stock_data_analysis_for_two_symbols.create_stock_prices_table manual__2024-11-10T02:53:48.710346+00:00 [queued]>
+[2024-11-10T02:53:51.464+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: Stock_data_analysis_for_two_symbols.create_stock_prices_table manual__2024-11-10T02:53:48.710346+00:00 [queued]>
+[2024-11-10T02:53:51.467+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 2
+[2024-11-10T02:53:51.523+0000] {taskinstance.py:2330} INFO - Executing <Task(_PythonDecoratedOperator): create_stock_prices_table> on 2024-11-10 02:53:48.710346+00:00
+[2024-11-10T02:53:51.541+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'Stock_data_analysis_for_two_symbols', 'create_stock_prices_table', 'manual__2024-11-10T02:53:48.710346+00:00', '--job-id', '58', '--raw', '--subdir', 'DAGS_FOLDER/dag_stock_price_lab.py', '--cfg-path', '/tmp/tmpdolfi2m7']
+[2024-11-10T02:53:51.547+0000] {standard_task_runner.py:91} INFO - Job 58: Subtask create_stock_prices_table
+[2024-11-10T02:53:51.559+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:61 DeprecationWarning: This process (pid=822) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2024-11-10T02:53:51.562+0000] {standard_task_runner.py:63} INFO - Started process 825 to run task
+[2024-11-10T02:53:51.660+0000] {task_command.py:426} INFO - Running <TaskInstance: Stock_data_analysis_for_two_symbols.create_stock_prices_table manual__2024-11-10T02:53:48.710346+00:00 [running]> on host 22359ceef38b
+[2024-11-10T02:53:51.892+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='Utkarsh Tripathi' AIRFLOW_CTX_DAG_ID='Stock_data_analysis_for_two_symbols' AIRFLOW_CTX_TASK_ID='create_stock_prices_table' AIRFLOW_CTX_EXECUTION_DATE='2024-11-10T02:53:48.710346+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-11-10T02:53:48.710346+00:00'
+[2024-11-10T02:53:51.894+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2024-11-10T02:53:51.927+0000] {connection.py:399} INFO - Snowflake Connector for Python Version: 3.10.0, Python Version: 3.12.3, Platform: Linux-5.15.153.1-microsoft-standard-WSL2-x86_64-with-glibc2.36
+[2024-11-10T02:53:51.928+0000] {connection.py:1239} INFO - This connection is in OCSP Fail Open Mode. TLS Certificates would be checked for validity and revocation status. Any other Certificate Revocation related exceptions or OCSP Responder failures would be disregarded in favor of connectivity.
+[2024-11-10T02:53:52.560+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-11-10T02:53:52.562+0000] {taskinstance.py:2905} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 465, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 432, in _execute_callable
+    return execute_callable(context=context, **execute_callable_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 400, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/decorators/base.py", line 265, in execute
+    return_value = super().execute(context)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 400, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/python.py", line 235, in execute
+    return_value = self.execute_callable()
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/python.py", line 252, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/airflow/dags/dag_stock_price_lab.py", line 81, in create_stock_prices_table
+    conn = return_snowflake_conn()
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/airflow/dags/dag_stock_price_lab.py", line 16, in return_snowflake_conn
+    conn = snowflake.connector.connect(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/snowflake/connector/__init__.py", line 55, in Connect
+    return SnowflakeConnection(**kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/snowflake/connector/connection.py", line 442, in __init__
+    self.connect(**kwargs)
+  File "/home/airflow/.local/lib/python3.12/site-packages/snowflake/connector/connection.py", line 745, in connect
+    self.__open_connection()
+  File "/home/airflow/.local/lib/python3.12/site-packages/snowflake/connector/connection.py", line 1073, in __open_connection
+    self.authenticate_with_retry(self.auth_class)
+  File "/home/airflow/.local/lib/python3.12/site-packages/snowflake/connector/connection.py", line 1345, in authenticate_with_retry
+    self._authenticate(auth_instance)
+  File "/home/airflow/.local/lib/python3.12/site-packages/snowflake/connector/connection.py", line 1373, in _authenticate
+    auth.authenticate(
+  File "/home/airflow/.local/lib/python3.12/site-packages/snowflake/connector/auth/_auth.py", line 401, in authenticate
+    Error.errorhandler_wrapper(
+  File "/home/airflow/.local/lib/python3.12/site-packages/snowflake/connector/errors.py", line 290, in errorhandler_wrapper
+    handed_over = Error.hand_to_other_handler(
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/snowflake/connector/errors.py", line 348, in hand_to_other_handler
+    connection.errorhandler(connection, cursor, error_class, error_value)
+  File "/home/airflow/.local/lib/python3.12/site-packages/snowflake/connector/errors.py", line 221, in default_errorhandler
+    raise error_class(
+snowflake.connector.errors.DatabaseError: 250001 (08001): None: Failed to connect to DB: JEB75478.snowflakecomputing.com:443. Incorrect username or password was specified.
+[2024-11-10T02:53:52.585+0000] {taskinstance.py:1206} INFO - Marking task as UP_FOR_RETRY. dag_id=Stock_data_analysis_for_two_symbols, task_id=create_stock_prices_table, run_id=manual__2024-11-10T02:53:48.710346+00:00, execution_date=20241110T025348, start_date=20241110T025351, end_date=20241110T025352
+[2024-11-10T02:53:52.671+0000] {standard_task_runner.py:110} ERROR - Failed to execute job 58 for task create_stock_prices_table (250001 (08001): None: Failed to connect to DB: JEB75478.snowflakecomputing.com:443. Incorrect username or password was specified.; 825)
+[2024-11-10T02:53:52.704+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 1
+[2024-11-10T02:53:52.763+0000] {taskinstance.py:3498} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-11-10T02:53:52.812+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

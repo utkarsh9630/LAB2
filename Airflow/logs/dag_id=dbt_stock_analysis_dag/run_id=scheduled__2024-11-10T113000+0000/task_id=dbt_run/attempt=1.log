@@ -1,0 +1,32 @@
+[2024-11-12T01:38:09.208+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-11-12T01:38:09.253+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: dbt_stock_analysis_dag.dbt_run scheduled__2024-11-10T11:30:00+00:00 [queued]>
+[2024-11-12T01:38:09.270+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: dbt_stock_analysis_dag.dbt_run scheduled__2024-11-10T11:30:00+00:00 [queued]>
+[2024-11-12T01:38:09.271+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 2
+[2024-11-12T01:38:09.295+0000] {taskinstance.py:2330} INFO - Executing <Task(BashOperator): dbt_run> on 2024-11-10 11:30:00+00:00
+[2024-11-12T01:38:09.307+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'dbt_stock_analysis_dag', 'dbt_run', 'scheduled__2024-11-10T11:30:00+00:00', '--job-id', '134', '--raw', '--subdir', 'DAGS_FOLDER/DAG for dbt.py', '--cfg-path', '/tmp/tmpa_sfjtsz']
+[2024-11-12T01:38:09.311+0000] {standard_task_runner.py:91} INFO - Job 134: Subtask dbt_run
+[2024-11-12T01:38:09.313+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:61 DeprecationWarning: This process (pid=306) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2024-11-12T01:38:09.314+0000] {standard_task_runner.py:63} INFO - Started process 313 to run task
+[2024-11-12T01:38:09.399+0000] {task_command.py:426} INFO - Running <TaskInstance: dbt_stock_analysis_dag.dbt_run scheduled__2024-11-10T11:30:00+00:00 [running]> on host 22359ceef38b
+[2024-11-12T01:38:09.588+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='Utkarsh Tripathi' AIRFLOW_CTX_DAG_ID='dbt_stock_analysis_dag' AIRFLOW_CTX_TASK_ID='dbt_run' AIRFLOW_CTX_EXECUTION_DATE='2024-11-10T11:30:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-11-10T11:30:00+00:00'
+[2024-11-12T01:38:09.589+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2024-11-12T01:38:09.621+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-11-12T01:38:09.635+0000] {taskinstance.py:2905} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 465, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 432, in _execute_callable
+    return execute_callable(context=context, **execute_callable_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 400, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/bash.py", line 220, in execute
+    raise AirflowException(f"Can not find the cwd: {self.cwd}")
+airflow.exceptions.AirflowException: Can not find the cwd: C:\Users\utkar\sjsu-data226-main\week10\build_utl
+[2024-11-12T01:38:09.643+0000] {taskinstance.py:1206} INFO - Marking task as UP_FOR_RETRY. dag_id=dbt_stock_analysis_dag, task_id=dbt_run, run_id=scheduled__2024-11-10T11:30:00+00:00, execution_date=20241110T113000, start_date=20241112T013809, end_date=20241112T013809
+[2024-11-12T01:38:09.664+0000] {standard_task_runner.py:110} ERROR - Failed to execute job 134 for task dbt_run (Can not find the cwd: C:\Users\utkar\sjsu-data226-main\week10\build_utl; 313)
+[2024-11-12T01:38:09.691+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 1
+[2024-11-12T01:38:09.720+0000] {taskinstance.py:3498} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-11-12T01:38:09.727+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

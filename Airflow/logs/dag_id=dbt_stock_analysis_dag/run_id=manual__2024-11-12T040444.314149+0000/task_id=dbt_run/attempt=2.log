@@ -1,0 +1,32 @@
+[2024-11-12T04:09:46.726+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-11-12T04:09:46.761+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: dbt_stock_analysis_dag.dbt_run manual__2024-11-12T04:04:44.314149+00:00 [queued]>
+[2024-11-12T04:09:46.772+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: dbt_stock_analysis_dag.dbt_run manual__2024-11-12T04:04:44.314149+00:00 [queued]>
+[2024-11-12T04:09:46.775+0000] {taskinstance.py:2306} INFO - Starting attempt 2 of 2
+[2024-11-12T04:09:46.796+0000] {taskinstance.py:2330} INFO - Executing <Task(BashOperator): dbt_run> on 2024-11-12 04:04:44.314149+00:00
+[2024-11-12T04:09:46.803+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'dbt_stock_analysis_dag', 'dbt_run', 'manual__2024-11-12T04:04:44.314149+00:00', '--job-id', '153', '--raw', '--subdir', 'DAGS_FOLDER/DAG for dbt.py', '--cfg-path', '/tmp/tmpinnixdua']
+[2024-11-12T04:09:46.806+0000] {standard_task_runner.py:91} INFO - Job 153: Subtask dbt_run
+[2024-11-12T04:09:46.807+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:61 DeprecationWarning: This process (pid=652) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2024-11-12T04:09:46.809+0000] {standard_task_runner.py:63} INFO - Started process 653 to run task
+[2024-11-12T04:09:46.861+0000] {task_command.py:426} INFO - Running <TaskInstance: dbt_stock_analysis_dag.dbt_run manual__2024-11-12T04:04:44.314149+00:00 [running]> on host bc0fee828d66
+[2024-11-12T04:09:46.963+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='Utkarsh Tripathi' AIRFLOW_CTX_DAG_ID='dbt_stock_analysis_dag' AIRFLOW_CTX_TASK_ID='dbt_run' AIRFLOW_CTX_EXECUTION_DATE='2024-11-12T04:04:44.314149+00:00' AIRFLOW_CTX_TRY_NUMBER='2' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-11-12T04:04:44.314149+00:00'
+[2024-11-12T04:09:46.965+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2024-11-12T04:09:46.982+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-11-12T04:09:46.994+0000] {taskinstance.py:2905} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 465, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 432, in _execute_callable
+    return execute_callable(context=context, **execute_callable_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 400, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/bash.py", line 220, in execute
+    raise AirflowException(f"Can not find the cwd: {self.cwd}")
+airflow.exceptions.AirflowException: Can not find the cwd: C:\Users\utkar\sjsu-data226-main\week10\build_utl
+[2024-11-12T04:09:47.000+0000] {taskinstance.py:1206} INFO - Marking task as FAILED. dag_id=dbt_stock_analysis_dag, task_id=dbt_run, run_id=manual__2024-11-12T04:04:44.314149+00:00, execution_date=20241112T040444, start_date=20241112T040946, end_date=20241112T040946
+[2024-11-12T04:09:47.018+0000] {standard_task_runner.py:110} ERROR - Failed to execute job 153 for task dbt_run (Can not find the cwd: C:\Users\utkar\sjsu-data226-main\week10\build_utl; 653)
+[2024-11-12T04:09:47.025+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 1
+[2024-11-12T04:09:47.048+0000] {taskinstance.py:3498} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-11-12T04:09:47.058+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

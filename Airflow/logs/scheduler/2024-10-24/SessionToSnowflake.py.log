@@ -1,0 +1,32 @@
+[2024-10-24T02:36:58.075+0000] {processor.py:161} INFO - Started process (PID=249) to work on /opt/airflow/dags/SessionToSnowflake.py
+[2024-10-24T02:36:58.077+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/SessionToSnowflake.py for tasks to queue
+[2024-10-24T02:36:58.080+0000] {logging_mixin.py:188} INFO - [2024-10-24T02:36:58.080+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/SessionToSnowflake.py
+[2024-10-24T02:36:58.143+0000] {processor.py:840} INFO - DAG(s) 'SessionToSnowflake' retrieved from /opt/airflow/dags/SessionToSnowflake.py
+[2024-10-24T02:36:58.407+0000] {logging_mixin.py:188} INFO - [2024-10-24T02:36:58.406+0000] {override.py:1829} INFO - Created Permission View: can read on DAG:SessionToSnowflake
+[2024-10-24T02:36:58.429+0000] {logging_mixin.py:188} INFO - [2024-10-24T02:36:58.428+0000] {override.py:1829} INFO - Created Permission View: can delete on DAG:SessionToSnowflake
+[2024-10-24T02:36:58.447+0000] {logging_mixin.py:188} INFO - [2024-10-24T02:36:58.446+0000] {override.py:1829} INFO - Created Permission View: can edit on DAG:SessionToSnowflake
+[2024-10-24T02:36:58.449+0000] {logging_mixin.py:188} INFO - [2024-10-24T02:36:58.448+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-10-24T02:36:58.470+0000] {logging_mixin.py:188} INFO - [2024-10-24T02:36:58.469+0000] {dag.py:3118} INFO - Creating ORM DAG for SessionToSnowflake
+[2024-10-24T02:36:58.489+0000] {logging_mixin.py:188} INFO - [2024-10-24T02:36:58.488+0000] {dag.py:3954} INFO - Setting next_dagrun for SessionToSnowflake to 2024-10-22 06:00:00+00:00, run_after=2024-10-23 06:00:00+00:00
+[2024-10-24T02:36:58.529+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/SessionToSnowflake.py took 0.464 seconds
+[2024-10-24T02:37:29.414+0000] {processor.py:161} INFO - Started process (PID=288) to work on /opt/airflow/dags/SessionToSnowflake.py
+[2024-10-24T02:37:29.416+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/SessionToSnowflake.py for tasks to queue
+[2024-10-24T02:37:29.419+0000] {logging_mixin.py:188} INFO - [2024-10-24T02:37:29.418+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/SessionToSnowflake.py
+[2024-10-24T02:37:29.450+0000] {processor.py:840} INFO - DAG(s) 'SessionToSnowflake' retrieved from /opt/airflow/dags/SessionToSnowflake.py
+[2024-10-24T02:37:29.489+0000] {logging_mixin.py:188} INFO - [2024-10-24T02:37:29.489+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-10-24T02:37:29.533+0000] {logging_mixin.py:188} INFO - [2024-10-24T02:37:29.533+0000] {dag.py:3954} INFO - Setting next_dagrun for SessionToSnowflake to 2024-10-22 06:00:00+00:00, run_after=2024-10-23 06:00:00+00:00
+[2024-10-24T02:37:29.570+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/SessionToSnowflake.py took 0.166 seconds
+[2024-10-24T02:39:04.799+0000] {processor.py:161} INFO - Started process (PID=204) to work on /opt/airflow/dags/SessionToSnowflake.py
+[2024-10-24T02:39:04.801+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/SessionToSnowflake.py for tasks to queue
+[2024-10-24T02:39:04.805+0000] {logging_mixin.py:188} INFO - [2024-10-24T02:39:04.805+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/SessionToSnowflake.py
+[2024-10-24T02:39:04.846+0000] {processor.py:840} INFO - DAG(s) 'SessionToSnowflake' retrieved from /opt/airflow/dags/SessionToSnowflake.py
+[2024-10-24T02:39:05.068+0000] {logging_mixin.py:188} INFO - [2024-10-24T02:39:05.068+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-10-24T02:39:05.098+0000] {logging_mixin.py:188} INFO - [2024-10-24T02:39:05.098+0000] {dag.py:3954} INFO - Setting next_dagrun for SessionToSnowflake to 2024-10-22 06:00:00+00:00, run_after=2024-10-23 06:00:00+00:00
+[2024-10-24T02:39:05.139+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/SessionToSnowflake.py took 0.350 seconds
+[2024-10-24T02:39:35.815+0000] {processor.py:161} INFO - Started process (PID=245) to work on /opt/airflow/dags/SessionToSnowflake.py
+[2024-10-24T02:39:35.817+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/SessionToSnowflake.py for tasks to queue
+[2024-10-24T02:39:35.820+0000] {logging_mixin.py:188} INFO - [2024-10-24T02:39:35.820+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/SessionToSnowflake.py
+[2024-10-24T02:39:35.854+0000] {processor.py:840} INFO - DAG(s) 'SessionToSnowflake' retrieved from /opt/airflow/dags/SessionToSnowflake.py
+[2024-10-24T02:39:35.888+0000] {logging_mixin.py:188} INFO - [2024-10-24T02:39:35.887+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-10-24T02:39:35.919+0000] {logging_mixin.py:188} INFO - [2024-10-24T02:39:35.918+0000] {dag.py:3954} INFO - Setting next_dagrun for SessionToSnowflake to 2024-10-22 06:00:00+00:00, run_after=2024-10-23 06:00:00+00:00
+[2024-10-24T02:39:35.946+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/SessionToSnowflake.py took 0.140 seconds

@@ -1,0 +1,24 @@
+[2024-11-10T04:14:12.625+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-11-10T04:14:12.669+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: Stock_data_analysis_lab2utl.create_stock_prices_table manual__2024-11-10T04:14:09.527818+00:00 [queued]>
+[2024-11-10T04:14:12.686+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: Stock_data_analysis_lab2utl.create_stock_prices_table manual__2024-11-10T04:14:09.527818+00:00 [queued]>
+[2024-11-10T04:14:12.687+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 2
+[2024-11-10T04:14:12.718+0000] {taskinstance.py:2330} INFO - Executing <Task(_PythonDecoratedOperator): create_stock_prices_table> on 2024-11-10 04:14:09.527818+00:00
+[2024-11-10T04:14:12.729+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'Stock_data_analysis_lab2utl', 'create_stock_prices_table', 'manual__2024-11-10T04:14:09.527818+00:00', '--job-id', '111', '--raw', '--subdir', 'DAGS_FOLDER/utl.py', '--cfg-path', '/tmp/tmpy6c9rtfo']
+[2024-11-10T04:14:12.736+0000] {standard_task_runner.py:91} INFO - Job 111: Subtask create_stock_prices_table
+[2024-11-10T04:14:12.738+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:61 DeprecationWarning: This process (pid=284) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2024-11-10T04:14:12.740+0000] {standard_task_runner.py:63} INFO - Started process 295 to run task
+[2024-11-10T04:14:12.838+0000] {task_command.py:426} INFO - Running <TaskInstance: Stock_data_analysis_lab2utl.create_stock_prices_table manual__2024-11-10T04:14:09.527818+00:00 [running]> on host 22359ceef38b
+[2024-11-10T04:14:12.984+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='Utkarsh Tripathi' AIRFLOW_CTX_DAG_ID='Stock_data_analysis_lab2utl' AIRFLOW_CTX_TASK_ID='create_stock_prices_table' AIRFLOW_CTX_EXECUTION_DATE='2024-11-10T04:14:09.527818+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-11-10T04:14:09.527818+00:00'
+[2024-11-10T04:14:12.986+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2024-11-10T04:14:13.021+0000] {connection.py:399} INFO - Snowflake Connector for Python Version: 3.10.0, Python Version: 3.12.3, Platform: Linux-5.15.153.1-microsoft-standard-WSL2-x86_64-with-glibc2.36
+[2024-11-10T04:14:13.024+0000] {connection.py:1239} INFO - This connection is in OCSP Fail Open Mode. TLS Certificates would be checked for validity and revocation status. Any other Certificate Revocation related exceptions or OCSP Responder failures would be disregarded in favor of connectivity.
+[2024-11-10T04:14:15.012+0000] {cursor.py:1149} INFO - Number of results in first chunk: 1
+[2024-11-10T04:14:15.015+0000] {logging_mixin.py:188} INFO - Table created successfully.
+[2024-11-10T04:14:15.017+0000] {connection.py:762} INFO - closed
+[2024-11-10T04:14:15.087+0000] {connection.py:768} INFO - No async queries seem to be running, deleting session
+[2024-11-10T04:14:15.431+0000] {python.py:237} INFO - Done. Returned value was: None
+[2024-11-10T04:14:15.435+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-11-10T04:14:15.464+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=Stock_data_analysis_lab2utl, task_id=create_stock_prices_table, run_id=manual__2024-11-10T04:14:09.527818+00:00, execution_date=20241110T041409, start_date=20241110T041412, end_date=20241110T041415
+[2024-11-10T04:14:15.540+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2024-11-10T04:14:15.636+0000] {taskinstance.py:3498} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2024-11-10T04:14:15.644+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

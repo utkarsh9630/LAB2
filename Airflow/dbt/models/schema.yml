@@ -1,0 +1,11 @@
+version: 2
+
+models:
+  - name: moving_averages
+    description: "Analytics model for session data"
+    columns:
+      - name: date_symbol
+        description: "Unique identifier for each stock price record"
+        data_tests:
+          - unique
+          - not_null

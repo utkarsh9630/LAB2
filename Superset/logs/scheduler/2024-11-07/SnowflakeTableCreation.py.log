@@ -1,0 +1,42 @@
+[2024-11-07T18:48:05.247+0000] {processor.py:161} INFO - Started process (PID=230) to work on /opt/airflow/dags/SnowflakeTableCreation.py
+[2024-11-07T18:48:05.248+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/SnowflakeTableCreation.py for tasks to queue
+[2024-11-07T18:48:05.251+0000] {logging_mixin.py:188} INFO - [2024-11-07T18:48:05.251+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/SnowflakeTableCreation.py
+[2024-11-07T18:48:05.283+0000] {processor.py:840} INFO - DAG(s) 'SnowflakeTableCreation' retrieved from /opt/airflow/dags/SnowflakeTableCreation.py
+[2024-11-07T18:48:05.348+0000] {logging_mixin.py:188} INFO - [2024-11-07T18:48:05.347+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-11-07T18:48:05.384+0000] {logging_mixin.py:188} INFO - [2024-11-07T18:48:05.384+0000] {dag.py:3954} INFO - Setting next_dagrun for SnowflakeTableCreation to 2024-11-07 06:00:00+00:00, run_after=2024-11-08 06:00:00+00:00
+[2024-11-07T18:48:05.426+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/SnowflakeTableCreation.py took 0.188 seconds
+[2024-11-07T18:48:36.029+0000] {processor.py:161} INFO - Started process (PID=279) to work on /opt/airflow/dags/SnowflakeTableCreation.py
+[2024-11-07T18:48:36.031+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/SnowflakeTableCreation.py for tasks to queue
+[2024-11-07T18:48:36.034+0000] {logging_mixin.py:188} INFO - [2024-11-07T18:48:36.034+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/SnowflakeTableCreation.py
+[2024-11-07T18:48:36.078+0000] {processor.py:840} INFO - DAG(s) 'SnowflakeTableCreation' retrieved from /opt/airflow/dags/SnowflakeTableCreation.py
+[2024-11-07T18:48:36.161+0000] {logging_mixin.py:188} INFO - [2024-11-07T18:48:36.160+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-11-07T18:48:36.241+0000] {logging_mixin.py:188} INFO - [2024-11-07T18:48:36.240+0000] {dag.py:3954} INFO - Setting next_dagrun for SnowflakeTableCreation to 2024-11-07 06:00:00+00:00, run_after=2024-11-08 06:00:00+00:00
+[2024-11-07T18:48:36.307+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/SnowflakeTableCreation.py took 0.295 seconds
+[2024-11-07T18:49:06.977+0000] {processor.py:161} INFO - Started process (PID=300) to work on /opt/airflow/dags/SnowflakeTableCreation.py
+[2024-11-07T18:49:06.979+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/SnowflakeTableCreation.py for tasks to queue
+[2024-11-07T18:49:06.983+0000] {logging_mixin.py:188} INFO - [2024-11-07T18:49:06.983+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/SnowflakeTableCreation.py
+[2024-11-07T18:49:07.030+0000] {processor.py:840} INFO - DAG(s) 'SnowflakeTableCreation' retrieved from /opt/airflow/dags/SnowflakeTableCreation.py
+[2024-11-07T18:49:07.098+0000] {logging_mixin.py:188} INFO - [2024-11-07T18:49:07.097+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-11-07T18:49:07.160+0000] {logging_mixin.py:188} INFO - [2024-11-07T18:49:07.159+0000] {dag.py:3954} INFO - Setting next_dagrun for SnowflakeTableCreation to 2024-11-07 06:00:00+00:00, run_after=2024-11-08 06:00:00+00:00
+[2024-11-07T18:49:07.232+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/SnowflakeTableCreation.py took 0.272 seconds
+[2024-11-07T18:49:37.658+0000] {processor.py:161} INFO - Started process (PID=321) to work on /opt/airflow/dags/SnowflakeTableCreation.py
+[2024-11-07T18:49:37.659+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/SnowflakeTableCreation.py for tasks to queue
+[2024-11-07T18:49:37.661+0000] {logging_mixin.py:188} INFO - [2024-11-07T18:49:37.660+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/SnowflakeTableCreation.py
+[2024-11-07T18:49:37.681+0000] {processor.py:840} INFO - DAG(s) 'SnowflakeTableCreation' retrieved from /opt/airflow/dags/SnowflakeTableCreation.py
+[2024-11-07T18:49:37.711+0000] {logging_mixin.py:188} INFO - [2024-11-07T18:49:37.710+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-11-07T18:49:37.735+0000] {logging_mixin.py:188} INFO - [2024-11-07T18:49:37.735+0000] {dag.py:3954} INFO - Setting next_dagrun for SnowflakeTableCreation to 2024-11-07 06:00:00+00:00, run_after=2024-11-08 06:00:00+00:00
+[2024-11-07T18:49:37.759+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/SnowflakeTableCreation.py took 0.107 seconds
+[2024-11-07T18:50:17.580+0000] {processor.py:161} INFO - Started process (PID=201) to work on /opt/airflow/dags/SnowflakeTableCreation.py
+[2024-11-07T18:50:17.581+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/SnowflakeTableCreation.py for tasks to queue
+[2024-11-07T18:50:17.583+0000] {logging_mixin.py:188} INFO - [2024-11-07T18:50:17.583+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/SnowflakeTableCreation.py
+[2024-11-07T18:50:17.604+0000] {processor.py:840} INFO - DAG(s) 'SnowflakeTableCreation' retrieved from /opt/airflow/dags/SnowflakeTableCreation.py
+[2024-11-07T18:50:17.638+0000] {logging_mixin.py:188} INFO - [2024-11-07T18:50:17.637+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-11-07T18:50:17.662+0000] {logging_mixin.py:188} INFO - [2024-11-07T18:50:17.662+0000] {dag.py:3954} INFO - Setting next_dagrun for SnowflakeTableCreation to 2024-11-07 06:00:00+00:00, run_after=2024-11-08 06:00:00+00:00
+[2024-11-07T18:50:17.684+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/SnowflakeTableCreation.py took 0.109 seconds
+[2024-11-07T18:50:48.083+0000] {processor.py:161} INFO - Started process (PID=253) to work on /opt/airflow/dags/SnowflakeTableCreation.py
+[2024-11-07T18:50:48.084+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/SnowflakeTableCreation.py for tasks to queue
+[2024-11-07T18:50:48.087+0000] {logging_mixin.py:188} INFO - [2024-11-07T18:50:48.086+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/SnowflakeTableCreation.py
+[2024-11-07T18:50:48.105+0000] {processor.py:840} INFO - DAG(s) 'SnowflakeTableCreation' retrieved from /opt/airflow/dags/SnowflakeTableCreation.py
+[2024-11-07T18:50:48.131+0000] {logging_mixin.py:188} INFO - [2024-11-07T18:50:48.131+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-11-07T18:50:48.156+0000] {logging_mixin.py:188} INFO - [2024-11-07T18:50:48.156+0000] {dag.py:3954} INFO - Setting next_dagrun for SnowflakeTableCreation to 2024-11-07 06:00:00+00:00, run_after=2024-11-08 06:00:00+00:00
+[2024-11-07T18:50:48.181+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/SnowflakeTableCreation.py took 0.103 seconds
